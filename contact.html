@@ -1,0 +1,126 @@
+contact!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Vogue Studio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', Arial, sans-serif; color: #333; background: #f5f5f5; line-height: 1.7; }
+    
+    /* NAV - Dark Charcoal */
+    nav { background: #1f1f1f; color: #fff; padding: 1.2rem 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    nav h2 { font-size: 1.5rem; letter-spacing: 2px; color: #d4af37; }
+    nav a { color: #e0e0e0; text-decoration: none; margin-left: 20px; font-weight: 500; transition: 0.3s; }
+    nav a:hover, nav a.active { color: #d4af37; }
+
+    /* HEADER - Gradient Grey */
+    .page-header { 
+      background: linear-gradient(135deg, #2c2c2c 0%, #1f1f1f 100%); 
+      color: #fff; 
+      text-align: center; 
+      padding: 90px 20px; 
+    }
+    .page-header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+    .page-header p { color: #bdbdbd; }
+
+    .container { max-width: 900px; margin: auto; padding: 60px 5%; }
+    
+    /* GRID */
+    .contact-wrapper { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+    
+    /* FORM - Light Grey Card */
+    form { background: #ffffff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
+    form h3 { color: #1f1f1f; margin-bottom: 15px; }
+    form input, form textarea { 
+      width: 100%; 
+      padding: 12px; 
+      margin: 10px 0; 
+      border: 1px solid #d6d6d6; 
+      border-radius: 8px; 
+      background: #fafafa;
+      transition: 0.3s;
+    }
+    form input:focus, form textarea:focus { 
+      border-color: #d4af37; 
+      outline: none; 
+      background: #fff;
+    }
+
+    /* BUTTON - Gold with Grey Hover */
+    .btn { 
+      background: #d4af37; 
+      color: #1f1f1f; 
+      padding: 12px 28px; 
+      border: none; 
+      border-radius: 50px; 
+      font-weight: bold; 
+      cursor: pointer; 
+      text-decoration: none; 
+      display: inline-block;
+      transition: 0.3s;
+    }
+    .btn:hover { background: #3a3a3a; color: #fff; }
+
+    /* INFO BOX - Medium Grey Card */
+    .info-box { 
+      background: #ffffff; 
+      padding: 30px; 
+      border-radius: 12px; 
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+      border-top: 3px solid #d4af37;
+    }
+    .info-box h3 { color: #d4af37; margin-bottom: 15px; }
+    .info-box p { color: #555; margin-bottom: 10px; }
+
+    /* FOOTER - Deep Grey */
+    footer { background: #1f1f1f; color: #bdbdbd; text-align: center; padding: 25px; margin-top: 60px; }
+
+    @media(max-width: 900px){ .contact-wrapper { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h2>VOGUE STUDIO</h2>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html" class="active">Contact</a>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <h1>Let’s Create Something Beautiful</h1>
+    <p>Book your fitting or send us a message</p>
+  </section>
+
+  <div class="container">
+    <div class="contact-wrapper">
+      <form>
+        <h3>Send a Message</h3>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <input type="tel" placeholder="WhatsApp Number">
+        <textarea rows="5" placeholder="Tell us about your dream dress" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+      <div class="info-box">
+        <h3>Visit Us</h3>
+        <p><b>Location:</b> Durban, KwaZulu-Natal, South Africa</p>
+        <p><b>WhatsApp / Call:</b> 066 089 5111</p>
+        <p><b>Email:</b> info@voguestudio.co.za</p>
+        <p><b>Hours:</b> Mon - Sat: 9AM - 5PM</p>
+        <a href="https://wa.me/27660895111" class="btn" style="margin-top:15px;">Chat on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Vogue Studio | We dress Mbokodos 💜</p>
+  </footer>
+
+</body>
+</html>

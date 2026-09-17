@@ -1,0 +1,178 @@
+about us <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Vogue Studio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { 
+      font-family: 'Poppins', Arial, sans-serif; 
+      color: #e0e0e0; 
+      background: linear-gradient(180deg, #0d0d0d 0%, #1a1a1a 100%); 
+      line-height: 1.7; 
+    }
+    
+    /* NAV - Glassmorphism Dark Grey */
+    nav { 
+      background: rgba(20, 20, 20, 0.7); 
+      backdrop-filter: blur(10px);
+      color: #fff; 
+      padding: 1.2rem 5%; 
+      display: flex; 
+      justify-content: space-between; 
+      align-items: center; 
+      position: sticky; 
+      top: 0; 
+      z-index: 1000;
+      border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+    }
+    nav h2 { font-size: 1.5rem; letter-spacing: 3px; color: #d4af37; text-shadow: 0 0 8px rgba(212,175,55,0.4); }
+    nav a { color: #bdbdbd; text-decoration: none; margin-left: 20px; font-weight: 500; transition: 0.3s; }
+    nav a:hover, nav a.active { color: #d4af37; text-shadow: 0 0 5px rgba(212,175,55,0.5); }
+
+    /* HERO SECTION - Futuristic Gradient */
+    .about-hero { 
+      background: linear-gradient(rgba(13,13,13,0.8), rgba(26,26,26,0.9)), url('https://via.placeholder.com/1400x500') center/cover; 
+      color: #fff; text-align: center; padding: 140px 20px;
+      border-bottom: 1px solid rgba(212,175,55,0.2);
+    }
+    .about-hero h1 { font-size: 3.2rem; margin-bottom: 15px; letter-spacing: 4px; color: #fff; }
+    .about-hero p { font-size: 1.2rem; max-width: 600px; margin: auto; color: #bdbdbd; }
+
+    /* CONTENT */
+    .container { max-width: 1100px; margin: auto; padding: 80px 5%; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+    .grid-2 img { 
+      width: 100%; 
+      border-radius: 16px; 
+      box-shadow: 0 0 30px rgba(212,175,55,0.15);
+      border: 1px solid rgba(212,175,55,0.2);
+    }
+    
+    h2.section-title { font-size: 2.2rem; margin-bottom: 20px; color: #fff; }
+    h2.section-title span { color: #d4af37; text-shadow: 0 0 8px rgba(212,175,55,0.4); }
+    p { margin-bottom: 15px; color: #a0a0a0; }
+
+    /* VALUES CARDS - Glass Cards */
+    .values { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 50px; }
+    .card { 
+      background: rgba(30, 30, 30, 0.6); 
+      backdrop-filter: blur(12px);
+      padding: 35px 25px; 
+      border-radius: 16px; 
+      text-align: center; 
+      border: 1px solid rgba(212,175,55,0.15);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.4); 
+      transition: all 0.4s ease;
+    }
+    .card:hover { 
+      transform: translateY(-8px); 
+      border-color: #d4af37;
+      box-shadow: 0 0 25px rgba(212,175,55,0.3);
+    }
+    .card h3 { color: #d4af37; margin-bottom: 12px; font-size: 1.3rem; }
+
+    /* CTA - Futuristic Panel */
+    .cta { 
+      background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%); 
+      color: #fff; 
+      text-align: center; 
+      padding: 70px 30px; 
+      margin-top: 80px; 
+      border-radius: 16px; 
+      border: 1px solid rgba(212,175,55,0.2);
+      box-shadow: 0 0 40px rgba(212,175,55,0.1);
+    }
+    .btn { 
+      background: #d4af37; 
+      color: #0d0d0d; 
+      padding: 14px 32px; 
+      text-decoration: none; 
+      border-radius: 50px; 
+      font-weight: bold; 
+      display: inline-block; 
+      margin-top: 20px; 
+      transition: 0.3s;
+      box-shadow: 0 0 15px rgba(212,175,55,0.4);
+    }
+    .btn:hover { 
+      background: #fff; 
+      color: #0d0d0d;
+      box-shadow: 0 0 25px rgba(255,255,255,0.4);
+    }
+
+    /* FOOTER */
+    footer { 
+      background: #0d0d0d; 
+      color: #777; 
+      text-align: center; 
+      padding: 30px; 
+      margin-top: 80px; 
+      border-top: 1px solid rgba(212,175,55,0.1);
+    }
+
+    /* MOBILE */
+    @media(max-width: 900px){
+      .grid-2, .values { grid-template-columns: 1fr; }
+      .about-hero h1 { font-size: 2.4rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h2>VOGUE STUDIO</h2>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <section class="about-hero">
+    <h1>ABOUT VOGUE STUDIO</h1>
+    <p>Tailoring confidence, one dress at a time. For every Mbokodo.</p>
+  </section>
+
+  <div class="container">
+    <div class="grid-2">
+      <div>
+        <h2 class="section-title">Our <span>Story</span></h2>
+        <p>At <b>Vogue Studio</b>, we believe fashion is more than fabric. It’s identity. It’s power.</p>
+        <p>Based in Durban, we specialize in custom-made dresses that celebrate African beauty, modern elegance, and the strength of women. Every stitch is made to fit you, not the other way around.</p>
+        <p>From concept to fitting, we walk with you to create a look that tells your story.</p>
+      </div>
+      <img src="c:\Users\Student\Documents\HTML WEBSITE\svv.jpeg" alt="Vogue Studio Tailoring">
+    </div>
+
+    <h2 class="section-title" style="text-align:center; margin-top:80px;">Why <span>Choose Us</span></h2>
+    <div class="values">
+      <div class="card">
+        <h3>Custom Fit</h3>
+        <p>No more one-size struggles. Every dress is tailored to your exact measurements.</p>
+      </div>
+      <div class="card">
+        <h3>Premium Fabric</h3>
+        <p>We use only high-quality materials for comfort, durability, and luxury feel.</p>
+      </div>
+      <div class="card">
+        <h3>Mbokodo Spirit</h3>
+        <p>We design for women who lead, who shine, and who aren’t afraid to stand out.</p>
+      </div>
+    </div>
+
+    <div class="cta">
+      <h2>Ready to Wear Your Power?</h2>
+      <p>Let’s design something that’s uniquely YOU.</p>
+      <a href="contact.html" class="btn">Book a Fitting</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Vogue Studio | Designed with love for every Mbokodo 💜</p>
+  </footer>
+
+</body>
+</html>
